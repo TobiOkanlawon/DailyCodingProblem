@@ -110,10 +110,12 @@ function checkParentheses(parentheses) {
   }
   if (solutionStack.length === 0) {
     return true;
+  } else {
+    return solutionStack.pop().value;
   }
-  return false;
 }
 
 // console.log(checkParentheses("((())())()"));
 // console.log(checkParentheses(")()("));
 // console.log(checkParentheses("())"));
+console.log(checkParentheses("((()"));
